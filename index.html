@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/regular.min.js">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <h1 class="heading">Introduction</h1>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Introduction</a></li>
+            <li><a href="about.html">Work, Force and Energy</a></li>
+            <li><a href="service.html">Projectile Motion</a></li>
+            <li><a href="plan.html">Impulse and Momentum</a></li>
+            <li><a href="contact.html">Heat n Light</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts   -->
+
+<section class="home">
+    <div class="image">
+        <img src="media/pic1.png" width="100%">
+        <img src="media/play.png" class="play-btn" onclick="playVideo('media/vid1.mp4')">
+        
+    </div>
+
+    <div class="content">
+        <h1 data-text="SIYENSIKULA">SIYENSIKULA</h1>
+        <p>Siyensikula aims to showcase and improve students' learning outcomes by creating captivating interactive learning resources based on demanding Science and Technology perceptions.</p>
+
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls id="myVideo">
+            <source src="media/vid1.mp4" type="video/mp4">
+        </video>
+      <img src="media/close.png" class="close-btn" 
+      onclick="stopVideo()">
+    </div>
+    <script>
+        
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo(){
+
+            videoPlayer.style.display = "none";
+
+        }
+
+        function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+    </script>
+
+</section>
+
+
+<!-- home section ends -->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>SCIE-WEB</h3>
+            <p>CULTURE ORIENTED WEB-BASED DELIVERY OF GRADE 9 SCIENCE LESSON</p>
+        </div>
+
+        <div class="box">
+            <h3>Members</h3>
+            <a href="#">Calalo, Asher Rayniel B.</a>
+            <a href="#">Acuña, Crizza Belle I.</a>
+            <a href="#">Fider, Kiara Sisley M.</a>
+            <a href="#">Manoy, Jeremae S.</a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe us for latest updates</p>
+            <form action="">
+                <input type="email" placeholder="your email">
+                <input type="submit" class="btn" value="subscribe">
+            </form>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <a href="https://www.facebook.com/jonjieivan.briones">Ivan Briones</a> | all rights reserved. </h1>
+
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
