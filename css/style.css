@@ -605,18 +605,18 @@ video:focus {
     .about .video-player{
         position: absolute;
         width: 320px;
-        left: 59%;
+        left: 57%;
         top: 21%;
     }
     .service .video-player{
         position: absolute;
-        width: 315px;
-        left: 59%;
-        top: 22%;
+        width: 320px;
+        left: 54%;
+        top: 24%;
     }.plan .video-player{
         position: absolute;
         width: 320px;
-        left: 59%;
+        left: 56%;
         top: 22%;
     }
     .contact .video-player{
