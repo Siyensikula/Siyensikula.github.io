@@ -156,7 +156,7 @@ video:focus {
     font-size: 2rem;
     color:#ffffff;
     padding:1rem 0;
-    text-justify: auto;
+    text-justify: initial;
 }
 
 .about{
@@ -539,6 +539,7 @@ video:focus {
     .home .content h1{
         font-size: 4rem;
         text-align: center;
+
     }
     .home .image .play-btn{
         width: 45px;
@@ -549,6 +550,8 @@ video:focus {
     }
     .home .image{
         position: relative;
+        left: 8%;
+
     }
     .about .content h1{
         font-size: 4rem;
@@ -592,6 +595,35 @@ video:focus {
     }
     .contact .image{
         position: relative;
+    }
+    .home .video-player{
+        position: absolute;
+        width: 320px;
+        left: 60%;
+        top: 30%;
+    }
+    .about .video-player{
+        position: absolute;
+        width: 320px;
+        left: 59%;
+        top: 21%;
+    }
+    .service .video-player{
+        position: absolute;
+        width: 315px;
+        left: 59%;
+        top: 22%;
+    }.plan .video-player{
+        position: absolute;
+        width: 320px;
+        left: 59%;
+        top: 22%;
+    }
+    .contact .video-player{
+        position: absolute;
+        width: 320px;
+        left: 59%;
+        top: 22%;
     }
 }
 
